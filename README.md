@@ -1,5 +1,32 @@
-# tukufu.github.io
-
-### header1
-## header 2
-# and so on...
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Persönliche Homepage</title>
+</head>
+<body>
+    <header>
+        <h1>Willkommen auf meiner persönlichen Homepage</h1>
+    </header>
+    <section>
+        <h2>Über mich</h2>
+        <p>Hier kannst du etwas über mich schreiben.</p>
+    </section>
+    <section>
+        <h2>Forschungsinteressen</h2>
+        <p>Meine Forschungsinteressen umfassen...</p>
+    </section>
+    <section>
+        <h2>Publikationen</h2>
+        <ul>
+            <li>Publikation 1</li>
+            <li>Publikation 2</li>
+            <!-- Weitere Publikationen hier -->
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2024 Mein Name</p>
+    </footer>
+</body>
+</html>
