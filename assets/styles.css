@@ -135,6 +135,19 @@ main section + section { margin-top: 40px; }
 
 .card-list { display: flex; flex-direction: column; gap: var(--space-3); }
 
+/* Publication list — compact reference-style entries for long bibliographies */
+.pub-group + .pub-group { margin-top: var(--space-4); }
+.pub-group-title { margin-bottom: var(--space-3); }
+.pub-list { display: flex; flex-direction: column; }
+.pub-item { padding: var(--space-3) 0; border-bottom: 1px solid var(--border); }
+.pub-item:last-child { border-bottom: none; }
+.pub-item-tags { display: flex; gap: var(--space-2); margin: 0 0 var(--space-1) 0; }
+.pub-item-title { font-family: var(--font-serif); font-weight: 600; font-size: 17px; line-height: 25px; color: var(--ink); margin: 0 0 4px 0; }
+.pub-item-title a { color: var(--ink); text-decoration: none; }
+.pub-item-title a:hover { color: var(--primary); text-decoration: underline; }
+.pub-item-meta { font-family: var(--font-sans); font-size: 14px; line-height: 21px; color: var(--ink-muted); margin: 0; }
+.pub-item-meta a { color: var(--primary); }
+
 /* Footer */
 .site-footer {
   border-top: 1px solid var(--border);
