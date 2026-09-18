@@ -148,6 +148,23 @@ main section + section { margin-top: 40px; }
 .pub-item-meta { font-family: var(--font-sans); font-size: 14px; line-height: 21px; color: var(--ink-muted); margin: 0; }
 .pub-item-meta a { color: var(--primary); }
 
+/* CV / career timeline */
+.cv-list { display: flex; flex-direction: column; gap: var(--space-3); }
+.cv-item { display: flex; gap: var(--space-3); padding-bottom: var(--space-3); border-bottom: 1px solid var(--border); }
+.cv-item:last-child { border-bottom: none; padding-bottom: 0; }
+.cv-item-period { flex: 0 0 132px; font-family: var(--font-sans); font-weight: 600; font-size: 13px; line-height: 20px; color: var(--primary); letter-spacing: 0.02em; padding-top: 3px; }
+.cv-item-body { flex: 1; min-width: 0; }
+.cv-item-role { font-family: var(--font-serif); font-weight: 600; font-size: 17px; line-height: 25px; color: var(--ink); margin: 0 0 4px 0; }
+.cv-item-org { font-family: var(--font-sans); font-size: 14px; line-height: 21px; color: var(--ink-muted); margin: 0; }
+
+/* Footer profile links (ORCID / Google Scholar / ResearchGate) */
+.footer-links { margin-top: var(--space-2); }
+
+@media (max-width: 640px) {
+  .cv-item { flex-direction: column; gap: 4px; }
+  .cv-item-period { flex: none; }
+}
+
 /* Footer */
 .site-footer {
   border-top: 1px solid var(--border);
